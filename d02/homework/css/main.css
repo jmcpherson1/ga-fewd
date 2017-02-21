@@ -63,6 +63,7 @@ li a:hover{
 /*Resources Section*/
 .resources{
    margin: 50px;
+   padding-bottom: 200px;
 }
 
 .item{
@@ -72,26 +73,33 @@ li a:hover{
 .thumbnail{
    max-width: 300px;
    height: 200px;
-   padding: 0px 50px 0px 50px;
+   padding: 0px 50px 0px 0px;
 }
 
 .subhead{
    width: 250px;
-   padding-left:50px;
    color:#000000;
 }
 
 .description{
    width: 250px;
-   padding: 0px 50px 50px 50px;
+   padding: 0px 50px 50px 0px;
    margin: 0px;
 }
+
+
+/*Videos Section*/
+.videos{
+   margin: 50px;
+   clear:both;
+}
+
 
 /*Footer Section*/
 .footer{
    height: 100px;
-   background-color: #1D1D1D;
    clear: both;
+   background: linear-gradient(#ffffff, #1D1D1D); 
 }
 
 .copyright{
