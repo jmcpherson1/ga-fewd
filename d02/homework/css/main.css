@@ -3,6 +3,10 @@ body{
    font-family: sans-serif;
 }
 
+a {
+   text-decoration: none;
+}
+
 /*Header Section*/
 .header{
    background-image: url(../images/skydiving_hero.jpg);
@@ -13,6 +17,7 @@ body{
 .logo{
    padding: 10px;
    width: 50px;
+   float: left;
 }
 
 header{
@@ -24,9 +29,12 @@ header{
 }
 
    /*////NavBar Start////*/
+nav{
+   clear: both;
+}
+
 ul{
    list-style-type: none;
-
 }
 
 li{
@@ -54,25 +62,30 @@ li a:hover{
 
 /*Resources Section*/
 .resources{
-   margin:50px;
-}
-
-.thumb{
-   width: 250px;
-   padding: 50px;
-   float: left;
-}
-
-.description{
-   width: 250px;
-   padding: 50px;
-
+   margin: 50px;
 }
 
 .item{
    float: left;
 }
 
+.thumbnail{
+   max-width: 300px;
+   height: 200px;
+   padding: 0px 50px 0px 50px;
+}
+
+.subhead{
+   width: 250px;
+   padding-left:50px;
+   color:#000000;
+}
+
+.description{
+   width: 250px;
+   padding: 0px 50px 50px 50px;
+   margin: 0px;
+}
 
 /*Footer Section*/
 .footer{
@@ -83,7 +96,7 @@ li a:hover{
 
 .copyright{
    margin: 0px;
-   padding:75px;
+   padding-top:75px;
    font-size: .8em;
    text-align: center;
    color: #ffffff;
