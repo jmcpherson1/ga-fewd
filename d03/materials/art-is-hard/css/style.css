@@ -1,0 +1,25 @@
+/*Global*/
+body{
+   font-family: sans-serif;
+}
+
+h1, h2{
+   color: gray;
+}
+
+.subhead{
+   font-size:12px;
+}
+
+img{
+   border-radius: 10px;
+   box-shadow:5px 5px 10px 2px rgba(0,0,0,.5); 
+   /*distance left, distance right, distance away, blur size, color*/
+}
+
+footer{
+   font-size: 10pt;
+   text-align: center;
+   padding-top: 10px;
+}
+
