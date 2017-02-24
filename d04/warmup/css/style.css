@@ -1,0 +1,17 @@
+body{
+   font-family: sans-serif;
+}
+
+.header{
+   color:#1300F0;
+}
+
+.subhead{
+   font-style: italic;
+}
+
+#unique{
+   background: yellow;
+   display: inline-block;
+   font-size: .7em;
+}

@@ -1,0 +1,35 @@
+body {
+   padding: 0px 100px 100px 100px;
+   text-align: center;
+}
+
+.wrapper {
+   background-color: gray;
+   padding: 10px;
+
+}
+
+.header {
+   font-weight: bold;
+   color: white;
+   background-color: black;
+   padding: 10px;
+   margin-bottom: 30px;
+}
+
+p {
+   padding: 20px;
+   background-color: darkorange;
+}
+
+#block1 {
+   color: purple;
+}
+
+#block2 {
+   color: green;
+}
+
+#block3 {
+   color: yellow;
+}

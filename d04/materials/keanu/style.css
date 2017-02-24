@@ -1,0 +1,17 @@
+h1 {
+  color: #7FDBFF;
+  background-color: yellow;
+  height: 100px;
+  width: 300px;
+  padding: 50px 20px 10px 20px;
+  border: 5px dashed red;
+  margin: 100px 100px 20px 100px ;
+}
+
+div {
+   border: 2px solid;
+   height: 100px;
+   width: 100px;
+   background-color: red;
+   margin:10px;
+}
