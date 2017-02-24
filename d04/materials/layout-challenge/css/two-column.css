@@ -3,6 +3,12 @@ body {
    font-family: sans-serif;
 }
 
+p {
+   width: 1000px;
+   margin: 0 auto;
+   padding-bottom: 20px;
+}
+
 #banner-top {
    background-color: gray;
    height: 150px;
@@ -11,35 +17,43 @@ body {
 
 .container {
    padding: 20px 100px;
+   text-align: left;
 }
 
-.block {
-   border: 1px solid black;
+.column {
+   border: 1px solid gray;
    background-color: lightgray;
    margin: ;
 }
 
-#block1 {
+#column1 {
    height: 100px;
-   width:;
+   width: 1000px;
+   margin: 0 auto;
 }
 
-#block2 {
+#center-blocks {
+   text-align: center;
+   padding: 20px 0;
+}
+
+#column2 {
    display: inline-block;
    height: 250px;
-   margin-top: 20px;
-   margin-bottom: 20px;
+   width: 588px;
+   margin-right: 19px;
 }
 
-#block3 {
+#column3 {
    display: inline-block;
    height: 250px;
-   margin-top: 20px;
-   margin-bottom: 20px;   
+   width: 388px;
 }
 
-#block4 {
+#column4 {
    height: 100px;
+   width: 1000px;
+   margin: 0 auto;
 }
 
 #banner-bottom {
