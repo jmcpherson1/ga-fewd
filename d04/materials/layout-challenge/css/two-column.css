@@ -1,0 +1,49 @@
+body {
+   margin: 0;
+   font-family: sans-serif;
+}
+
+#banner-top {
+   background-color: gray;
+   height: 150px;
+   margin-bottom: 20px;
+}
+
+.container {
+   padding: 20px 100px;
+}
+
+.block {
+   border: 1px solid black;
+   background-color: lightgray;
+   margin: ;
+}
+
+#block1 {
+   height: 100px;
+   width:;
+}
+
+#block2 {
+   display: inline-block;
+   height: 250px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+#block3 {
+   display: inline-block;
+   height: 250px;
+   margin-top: 20px;
+   margin-bottom: 20px;   
+}
+
+#block4 {
+   height: 100px;
+}
+
+#banner-bottom {
+   background-color: gray;
+   height: 150px;
+   margin-top:50px;
+}
