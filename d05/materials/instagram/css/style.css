@@ -1,0 +1,123 @@
+body {
+   font-family: 'Open Sans', sans-serif;
+   margin: 0;
+}
+
+.wrapper {
+   display: inline-block;
+   height: 150px;
+   background-color: #487498;
+   width: 100%;
+   padding: 0px 100px;
+   margin-bottom: 310px;
+
+}
+
+.container {
+   margin: 0 auto;
+   width: 960px;
+   height: 500px;
+   padding-top: 30px;
+}
+
+#iphone {
+   display: inline-block;
+   height: 440px;
+   float: left;
+
+}
+
+#login {
+   display: inline-block;
+   width: 390px;
+   padding-top: 30px;
+}
+
+#logo {
+   display: inline-block;
+   width: 200px;
+}
+
+#house {
+   padding: 0;
+   width: 24px;
+}
+
+button {
+   float: right;
+   height: 36px;
+   background-color: #6D91AF;
+   color: #ffffff;
+   border-radius: 4px;
+   box-shadow: 1px 1px 1px rgba(0,0,0,.7);
+   border: none;
+   padding: 0 8px;
+   cursor: pointer;
+}
+
+#loginspan {
+   float: right;
+   margin-top: 10px;
+
+}
+
+.block {
+   display: inline-block;
+   height: 265px;
+   width: 355px;
+   background-color: #ffffff;
+   border-radius: 8px;
+   box-shadow: 1px 1px 5px 1px rgba(0,0,0,.7); /*h w blur spread color*/
+   padding: 18px;
+
+}
+
+h1 {
+   display: inline-block;
+   margin: 0;
+   color: #11395D;
+   font-size: 18px;
+   width: 250px;
+   padding: 0px;
+}
+
+p {
+   font-size: 12px
+}
+
+#applestore {
+   padding-right: 18px;
+}
+
+nav {
+   display: inline-block;
+   font-size: 0px;
+
+}
+
+ul {
+   list-style: none; 
+}
+
+li {
+   display: inline-block;
+   padding: 9px;
+}
+
+a {
+   text-decoration: none;
+   color: #46739A;
+   font-size: 12px;
+}
+
+footer {
+   text-align: center;
+   clear: both;
+}
+
+#copyright{
+   display: inline-block;
+   color: #CFCFCF;
+   font-size: 10px;
+}
+
