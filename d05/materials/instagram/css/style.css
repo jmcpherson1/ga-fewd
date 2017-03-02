@@ -63,8 +63,7 @@ button {
 
 .block {
    display: inline-block;
-   height: 265px;
-   width: 355px;
+   width: 315px;
    background-color: #ffffff;
    border-radius: 8px;
    box-shadow: 1px 1px 5px 1px rgba(0,0,0,.7); /*h w blur spread color*/
@@ -82,11 +81,20 @@ h1 {
 }
 
 p {
-   font-size: 12px
+   font-size: 11px
 }
 
-#applestore {
-   padding-right: 18px;
+#badge-container {
+}
+
+.badge {
+   display: block;
+   height: 36px;
+   float: left;
+}
+
+.applestore {
+   padding-right: 8px;
 }
 
 nav {
