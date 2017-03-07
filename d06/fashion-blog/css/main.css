@@ -1,5 +1,151 @@
 body {
    font-family: 'Lato', sans-serif;
+   font-weight: 300;
+   width: 1440px;
+   margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+   font-weight: 300;
+}
+
+h5 {
+   font-weight: 700;
+   font-size: 16px;
+   color: gray;
+}
+
+p {
+   line-height: 1.5;
+   font-size: 16px;
+   color: #444;
+}
+
+.wrapper {
+   width: 1215px;
+   margin: 0 auto;
+
+}
+
+#title {
+   display: inline-block;
+   font-size: 48px;
+}
+
+#tagline {
+   display: inline-block;
+   font-size: 24px;
+   padding-left: 16px;
+}
+
+.header {
+   margin-bottom: 150px;
+}
+
+.date {
+   color: #ccc;
+}
+
+.readmore {
+   text-decoration: none;
+   color: #aa0000;
+   float: right;
+   padding-bottom: 24px;
+}
+
+
+/* Header Nav - Start */
+#header-nav {
+   padding: 0px;
+   margin: 0 auto;
+}
+
+#header-nav-list {
+   list-style-type: none;
+   margin: 0px;
+   padding: 0px;
+  
+}
+
+.header-nav-item a {
+   float: left;
+   border-right: 1px solid #fff;
+   display: block;
+   text-decoration: none;
+   background-color: black;
+   color: #dddddd;
+   padding: 8px 0px;
+   font-size: 24px;
+   width: 200px;
+   text-align: center;
+}
+
+#header-nav-list:last-child {
+    border-right: none;
+}
+
+.header-nav-item a:hover {
+   background-color: #aa0000;
+}
+
+/* Header Nav - End */
+
+#blog-section {
+   float: left;
+   display: block;
+   width: 810px;
+}
+
+.blog-photo {
+   width: 810px;
+}
+
+
+/* Footer Start */
+
+
+
+/* Footer End */
+
+
+.sidebar {
+   float: left;
+   display: block;
+   width: 288px;
+   padding-left: 45px;
+   padding-right: 10px;
+}
+
+.popularposts a {
+   text-decoration: none;
+   color: #aa0000; 
+}
+
+.boxad {
+   font-size: 100px;
+   height: 250px;
+   width: 300px;
+   text-align: center;
+   font-weight: 700;
+   color: #fff;
+   display: block;
+   background-color: gray;
+   margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.boxad-content {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.clearfix {
+   clear:both;
 }
 
 
