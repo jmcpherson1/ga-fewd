@@ -19,6 +19,7 @@ p {
    line-height: 1.5;
    font-size: 16px;
    color: #444;
+   margin: 24px 0;
 }
 
 .wrapper {
@@ -27,20 +28,30 @@ p {
 
 }
 
+.header {
+   margin-top: 50px;
+   margin-bottom: 100px;
+}
+
+#header-lockup {
+   padding-bottom: 16px;
+}
+
 #title {
    display: inline-block;
    font-size: 48px;
+   color: #DD0000;
+   margin: 0;
 }
 
 #tagline {
    display: inline-block;
    font-size: 24px;
    padding-left: 16px;
+   color: gray;
+   margin: 0;
 }
 
-.header {
-   margin-bottom: 150px;
-}
 
 .date {
    color: #ccc;
@@ -48,9 +59,18 @@ p {
 
 .readmore {
    text-decoration: none;
-   color: #aa0000;
+   color: #DD0000;
    float: right;
    padding-bottom: 24px;
+}
+
+.big-letter {
+   color: #ccc;
+   font-size: 100px;
+   display: inline-block;
+   line-height: 0;
+   padding: 24px 0;
+   float: left;
 }
 
 
@@ -74,7 +94,7 @@ p {
    text-decoration: none;
    background-color: black;
    color: #dddddd;
-   padding: 8px 0px;
+   padding: 16px 0px;
    font-size: 24px;
    width: 200px;
    text-align: center;
@@ -103,7 +123,33 @@ p {
 
 /* Footer Start */
 
+.footer-nav {
+   padding: 50px 0;
+}
 
+.footer-nav-item {
+   list-style-type: none;
+   float: left;
+   margin: 0;
+
+}
+
+.footer-nav-item a {
+   text-decoration: none;
+   color: #DD0000;
+   padding-right: 5px;
+   padding-left: 5px;
+}
+
+.footer-nav-item a:hover {
+   font-weight: 700;
+}
+
+.divider {
+   border-right: 1px solid gray;
+   
+   
+}
 
 /* Footer End */
 
@@ -118,7 +164,7 @@ p {
 
 .popularposts a {
    text-decoration: none;
-   color: #aa0000; 
+   color: #DD0000; 
 }
 
 .boxad {
