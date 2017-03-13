@@ -1,12 +1,10 @@
 <html>
    <head>
-	  <title>Startup Matchmaker</title>
-
-	  <link href='https://fonts.googleapis.com/css?family=Oswald:700,400|Merriweather:700,700italic|Source+Sans+Pro' rel='stylesheet' type='text/css'>
-     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+   	<title>Startup Matchmaker</title>
+      <link href='https://fonts.googleapis.com/css?family=Oswald:700,400|Merriweather:700,700italic|Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
       <link rel="stylesheet" text="text/css" href="css/simple-grid.css">
-	  <link rel="stylesheet" href="css/styles.css">
-
+      <link rel="stylesheet" href="css/styles.css">
    </head>
 
    <body>
@@ -26,50 +24,60 @@
                </nav>
             </div>
 
-            <section class="grid tagline clearfix">
-               Because two brains <span>taste</span> <span>are</span> better than one.
-            </section>
+            <div class="grid tagline">
+               Because two brains <span id="taste">taste</span> <span id="are">are</span> better than one.
+            </div>
 
-            <section class="grid carousel clearfix">
-               <div class="signup-block">
-                  <h1>Meet you Match!</h1>
-                  <p>
-                     Have a great idea for a product, but need help making it a reality? We're here to help. Startup Matchmaker is the best place for designers and developers to find each other.
-                  </p>
-                  <button class="create-pro-btn">Create A Profile</button>
+            <div class="grid carousel">
+               <div class="signup-block push-right hide-on-mobile">
+                  <div id="block">
+                     <div class="heading"><b>Meet you Match!</b></div>
+                     <p>
+                        Have a great idea for a product, but need help making it a reality? We're here to help. Startup Matchmaker is the best place for designers and developers to find each other.
+                     </p>
+                     <button class="btn-main">Create A Profile</button>
+                  </div>
                </div>
-            </section>
+            </div>
+         </header>
 
-            <section>
-               <div class="profile">
+
+         <section class="grid">
+            <div class="module col-1-3">
+               <div class="module-content">
                   <h2>Create a Profile</h2>
                      <p>
                         Are you a Designer? Developer? Put yourself out there so that others can find you!
                      </p>
-                  <button class="create-pro-btn">Sign Up Now</button>
+                  <button>Sign Up Now</button>
                </div>
+            </div>
 
-               <div class="developer">
+            <div class="module col-1-3">
+               <div class="module-content">
                   <h2>Find a Developer</h2>
                      <p>
                         Looking for a fantastic developer to work with on the next big thing? Look no further.
                      </p>
-                  <button class="dev-search-btn">Start Your Search</button>
+                  <button>Start Your Search</button>
                </div>
+            </div>
 
-               <div class="designer">
+            <div class="module col-1-3">
+               <div>
                   <h2>Find a Designer</h2>
                      <p>
                         Need someone who can make a product intuitive and appealing? Get ready.
                      </p>
-                  <button class="design-search-btn">Start Your Search</button>
+                  <button>Start Your Search</button>
                </div>
-            </section>
-         </header>
-         
-         <footer>
-            &copy; 2013 Startup Matchmaker. Made in NY.
+            </div>
+         </section>
+      
+         <footer class="grid">
+            <div class="col-1-1">&copy; 2013 Startup Matchmaker. Made in NY.</div>
          </footer>
+
       </main>
    </body>
 </html>

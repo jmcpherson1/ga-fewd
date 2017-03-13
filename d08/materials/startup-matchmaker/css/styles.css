@@ -3,20 +3,38 @@
 // BUTTONS: font-family: 'Oswald', sans-serif;
 // LOGO: font-family: 'Merriweather', serif;
 // BODY TEXT: font-family: 'Source Sans Pro', sans-serif;
+
+10px = 0.625rem
+12px = 0.75rem
+14px = 0.875rem
+16px = 1rem (base)
+18px = 1.125rem
+20px = 1.25rem
+24px = 1.5rem
+30px = 1.875rem
+32px = 2rem
 */
 
 html {
-   font-size: 100%;
+   font-size: 95%;
+   line-height: 1.5rem;
+   font-family: 'Source Sans Pro', sans-serif;
+   background-color: #E2E6E9; 
 }
 
-.clearfix {
-   clear: both;
+h2 {
+   font-family: 'Merriweather', serif;
+}
+
+.heading {
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 1.875rem;
+   font-weight: 700;
 }
 
 .header-bar {
-
    background-color: black;
-   padding: 24px;
+   padding: 24px 50px;
    height: 70px;
 }
 
@@ -27,21 +45,6 @@ html {
    float: left;
 }
 
-.tagline {
-   background-color: gray;
-   padding: 24px;
-   font-family: 'Merriweather', serif;
-   font-weight: 700;
-   font-style: italic;
-   text-align: center; 
-   font-size: 1.125rem;  
-}
-
-.carousel {
-   height: 425px;
-   background-image: url("../img/coworking.jpg");
-}
-
 ul {
    list-style-type: none;
    float: right;
@@ -50,10 +53,92 @@ ul {
 
 li {
    display: inline-block;
+   font-family: 'Source Sans Pro', sans-serif;
 }
 
 li a {
    color: white;
    text-decoration: none;
+   padding-right: 16px;
    
 }
+
+.tagline {
+   font-family: 'Merriweather', serif;
+   font-size: 1.5rem;
+   font-weight: 700;
+   font-style: italic;
+   text-align: center;
+   background-color: #C6C6C6;
+   padding: 18px;
+   border-top: 4px solid yellow;
+}
+
+#taste {
+   color: #808080;
+   text-decoration: line-through;
+}
+
+#are {
+   border-bottom: 3px solid yellow;
+}
+
+.carousel {
+   height: 340px;
+   background-image: url("../img/coworking.jpg");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   box-shadow: inset 1px 1px 10px rgba(0,0,0,1);
+   padding: 30px 50px 0;
+}
+
+.signup-block {
+   width: 410px;
+   height: 280px;
+   background-color: rgba(255,255,255,.8);
+   box-shadow: 1px 1px 3px rgba(0,0,0,1); 
+}
+
+#block {
+   width: 330px;
+   margin: 40px;
+}
+
+.module {
+   width: 380px;
+   height: 260px;
+   padding: 20px 50px;
+   background-color: #ededed;
+}
+
+.module-content {
+   width: 280px;
+   padding-right: 49px;
+   border-right: 1px solid rgba(0,0,0,.2);
+}
+
+button.btn-main {
+   background-color: yellow;
+   width: 330px;
+}
+
+button {
+   width: 280px;
+   height: 45px;
+   font-family: 'Oswald', sans-serif;
+   font-weight: 700;
+   text-transform: uppercase;
+   box-shadow: 0px 2px 1px rgba(0,0,0,.4);
+   border: 0px;
+   border-radius: 5px;
+   background-color: #C6C6C6;
+}
+
+footer {
+   background-color: black;
+   padding: 24px 50px;
+   height: 70px;
+   color: white;
+}
+
