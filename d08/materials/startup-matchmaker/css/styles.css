@@ -105,17 +105,24 @@ li a {
    margin: 40px;
 }
 
+.container {
+   background-color: #ededed;
+}
+
 .module {
    width: 380px;
    height: 260px;
    padding: 20px 50px;
-   background-color: #ededed;
 }
 
 .module-content {
    width: 280px;
    padding-right: 49px;
    border-right: 1px solid rgba(0,0,0,.2);
+}
+
+.container:last-child {
+   border-right: 0;
 }
 
 button.btn-main {
@@ -140,5 +147,33 @@ footer {
    padding: 24px 50px;
    height: 70px;
    color: white;
+}
+
+
+
+@media (max-width : 767px) {
+   .module {
+      text-align: center;
+      margin: 0 auto;
+      border-bottom: 1px solid rgba(0,0,0,.4);
+   }
+
+   .module:last-child {
+      border-bottom: none;
+   }
+
+   .module-content {
+      border-right: none;
+   }
+
+   footer {
+      text-align: center;
+   }
+
+
+}
+
+@media only screen and (max-width : 480px) {
+
 }
 
