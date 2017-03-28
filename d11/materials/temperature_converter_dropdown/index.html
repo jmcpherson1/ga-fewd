@@ -8,15 +8,20 @@
 </head>
 <body>
   <main>
+    <select>
+      <option class="celsius" value="celsius">Celsius</option>
+      <option class="fahrenheit" value="fahrenheit">Fahrenheit</option>
+    </select>
+
+    <br>
 
     <label>
       Temperature <!-- in Celsius -->
       <input type="text" id="temperature" />
     </label>
     <button>Convert!</button>
-  
-    <p>That is equal to <span id="converted">___</span>° Fahrenheit.</p>
-    
+
+    <p>The temperature converts to <span id="converted">___</span>° <span id="temp"></span>.</p>
   </main>
 
 
