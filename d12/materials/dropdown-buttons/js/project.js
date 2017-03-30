@@ -3,6 +3,10 @@ $("#btnFile").on("click", function () {
    $("#file").toggle();
 });
 
+$("#btnFile").on("focusout", function () {
+   $("#file").hide();
+});
+
 $("#btnEdit").on("click", function () {
    $("#edit").toggle();
 });
