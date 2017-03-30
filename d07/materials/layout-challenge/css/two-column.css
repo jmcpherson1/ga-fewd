@@ -1,8 +1,3 @@
-body {
-   width: 100%;
-   margin: 0 auto;
-}
-
 header, footer {
    background: gray;
    height: 100px;
@@ -15,6 +10,7 @@ main {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+    width: 70%;
     width: 70vw;
     margin: 50px auto;
 }
@@ -29,7 +25,7 @@ div.box {
    margin: 10px;
 }
 
-.box1 {
+.box1, .box4 {
    height: 100px;
    width: 100%;
 }
@@ -46,9 +42,4 @@ div.box {
    -webkit-flex: 1 0 300px;
        -ms-flex: 1 0 300px;
            flex: 1 0 300px;
-}
-
-.box4 {
-   height: 100px;
-   width: 100%;
 }

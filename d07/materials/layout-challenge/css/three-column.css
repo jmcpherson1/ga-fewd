@@ -1,0 +1,43 @@
+header, footer {
+   background: gray;
+   height: 100px;
+   width: 100%;
+}
+
+main {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 50px auto;
+   width: 70%;
+   width: 70vw;
+}
+
+h2 {
+   margin-left: 10px;
+}
+
+div.box {
+   background: lightgray;
+   border: 1px solid gray;
+   margin: 10px;
+}
+
+.box1, .box5 {
+   height: 100px;
+   width: 100%;
+}
+
+.box2 {
+   height: 300px;
+   flex: 1 0 100px;
+}
+
+.box3 {
+   height: 300px;
+   flex: 7 0 100px;
+}
+
+.box4 {
+   height: 300px;
+   flex: 2 0 100px;
+}
