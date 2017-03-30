@@ -1,0 +1,54 @@
+body {
+   width: 100%;
+   margin: 0 auto;
+}
+
+header, footer {
+   background: gray;
+   height: 100px;
+}
+
+main {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    width: 70vw;
+    margin: 50px auto;
+}
+
+h2 {
+   margin-left: 10px;
+}
+
+div.box {
+   background: lightgray;
+   border: 1px solid gray;
+   margin: 10px;
+}
+
+.box1 {
+   height: 100px;
+   width: 100%;
+}
+
+.box2 {
+   height: 300px;
+   -webkit-flex: 4 0 300px;
+       -ms-flex: 4 0 300px;
+           flex: 4 0 300px;
+}
+
+.box3 {
+   height: 300px;
+   -webkit-flex: 1 0 300px;
+       -ms-flex: 1 0 300px;
+           flex: 1 0 300px;
+}
+
+.box4 {
+   height: 100px;
+   width: 100%;
+}
