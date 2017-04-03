@@ -1,65 +1,132 @@
+html {
+  font-size: 100%;
+}
+
 body {
-   margin: 0 auto;
-   width: 100vw;
+  margin: 0 auto;
+  width: 100vw;
 }
 
 header {
-   background: black;
-   padding: 20px 25px;
-}
-
-nav {
-   display: flex;
-   justify-content: space-between;
+  background: rgb(0,0,0);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+     -ms-flex-pack: justify;
+         justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+     -ms-flex-wrap: wrap;
+         flex-wrap: wrap;
 }
 
 .title {
-   font-size: 1.75rem;
-   font-weight: bold;
-   color: white;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: white;
+  padding: 20px 25px;
 }
 
-/* Nav */
 #menu-icon {
-   cursor: pointer;
+  cursor: pointer;
+  padding: 20px 25px;
+}
+
+div#menu-icon:focus {
+  background: red;
 }
 
 .menu-bar {
-   width: 25px;
-   height: 3px;
-   background-color: white;
-   margin: 6px 0;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
 }
 
-ul.menu-open {
-   display: none;
+nav {
+  font-family: sans-serif;
 }
 
-/*ul.menu-open {
-   display: flex;
-   flex: 1 1 300px;
-   flex-direction: column;
-}*/
+ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  list-style: none;
+  cursor: pointer;
+}
+
+a {
+  color: white;
+}
+
+/**********************/
+
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+   header {
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+   }
+
+   #menu-icon {
+      position: absolute;
+      -webkit-align-self: flex-end;
+          -ms-flex-item-align: end;
+              align-self: flex-end;
+   }
+
+   /* Nav */
+   nav {
+      display: none;
+   }
+
+   ul.menu-open {
+      font-size: .9rem;
+      
+   }
+
+   li {
+      padding: 25px 0;
+   }
+
+   li:hover {
+      background: rgba(255,255,255,0.15);
+   }
+
+   a {
+      text-decoration: none;
+   }
+
+}
 
 
 /* Desktop */
-@media (min-width: 768px) {
+@media only screen and (min-width: 767px) {
    #menu-icon {
       display: none;
    }
 
-   ul.menu-open{
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding-top: 10px;
+   /* Nav */
+   nav {
+      font-size: 1rem;
+      padding: 25px 25px;
    }
 
-   ul li a{
-      text-decoration: none;
-      color: white;
+   ul{
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; /*Main axis align nav items*/
+   }
+
+   li{
       padding-left: 20px;
    }
 
-}
+   a:hover {
+      color: gray;
+      text-decoration: none;
+   }
 
+}
