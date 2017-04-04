@@ -1,0 +1,16 @@
+.wrapper {
+    margin: 0 auto;
+    display: block;
+    width: 700px;
+}
+
+#ship {
+   width: 100px;
+   position: absolute;
+}
+
+.space {
+   width: 700px;
+   height: 700px;
+   overflow: hidden;
+}
