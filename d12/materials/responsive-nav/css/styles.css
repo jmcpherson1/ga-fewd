@@ -82,12 +82,8 @@ a {
       display: none;
    }
 
-   ul.menu-open {
-      font-size: .9rem;
-      
-   }
-
    li {
+      font-size: .9rem;
       padding: 25px 0;
    }
 
@@ -109,6 +105,10 @@ a {
    }
 
    /* Nav */
+   .show-nav{
+      display: none;
+   }
+
    nav {
       font-size: 1rem;
       padding: 25px 25px;
@@ -117,7 +117,7 @@ a {
    ul{
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex; /*Main axis align nav items*/
+      display: flex; /*Align nav items in row*/
    }
 
    li{
