@@ -8,8 +8,7 @@ $("a").on("click", function () {
    $(".overlay").fadeIn();
 });
 
-$("a").on("focusout", function () {
-   $(".overlay").hide();
-   $(".modal").toggleClass("show-modal");
-
+$(".overlay").on("click", function() {
+  $(".overlay").hide();
+  $(".modal").toggleClass("show-modal");
 });
