@@ -1,25 +1,20 @@
 /*Questions:
   1. How do you organize and watch a CSS and SCSS folder?
-  2. Button include?
+  2. 'header' spacing???
 */
 
 @import "partials/_variables.scss";
 @import "partials/_resets";
 @import "partials/_buttons.scss";
-
 // @import "partials/_base.scss";
 
-
-#sidebar {
-  background: rgb(238, 238, 238);
-  padding: 40px;
-}
-
-header {
+.header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-left: -15px;
+  background: $grayscale-light;
+  padding: 40px;
 }
 
 .menu-icon {
@@ -40,7 +35,6 @@ header {
   margin-left: auto;
   width: 55px;
   height: 55px;
-  
 }
 
 .nav-items {
@@ -51,8 +45,15 @@ header {
   }
 }
 
+//Sidebar Container
+#sidebar-container {
+  background-color: $grayscale-light;
+  padding: 40px;
+}
+
 .sidebar-content {
-  margin-top: 100px;
+  margin-top: 80px;
+  width: 70vw;
 
   .sidebar-heading {
     font-family: $header-font;
@@ -67,7 +68,8 @@ header {
 }
 
 
-//Content Sections
+
+//Content Container
 #work {
   background-color: #CE5252; 
   height: 364px;
@@ -83,18 +85,64 @@ header {
   height: 364px;
 }
 
+
+
+//****** Media Queries *******//
+
 //Smaller Tablet
 @media (min-width: 480px) {
-  html { background: green; }
+  
 }
 
 //Tablet
 @media (min-width: 768px) {
-  html { background: blue; }
+  .header { //Need to make fixed, 'margin-left: auto' not working here
+    background-color: rgba(0,0,0,0);
+    padding: 40px;
+    position: absolute;
+    z-index: 100
+  }
+
+  #content-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: static;
+    overflow: visible;
+    width: 50%;
+    max-width: 1200px;
+    margin-left: 50%
+  }
+
+  #sidebar-container {
+    position: fixed;
+    height: 100%;
+    width: 50%;
+  }
+
+  .sidebar-content {
+    margin-top: 200px;
+    width: 70%;
+  }
+
+  //Content Sections
+  #work {
+    height: 400px;
+    width: 100%;
+  }
+
+  #sketchbook {
+    height: 364px;
+    width: 50%;
+  }
+
+  #contact {
+    height: 364px;
+    width: 50%;
+  }
 }
 
 //Desktop
 @media (min-width: 1024px) {
-  html { background: yellow; }
+  
 }
 

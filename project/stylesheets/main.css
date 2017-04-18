@@ -1,6 +1,6 @@
 /*Questions:
   1. How do you organize and watch a CSS and SCSS folder?
-  2. Button include?
+  2. 'header' spacing???
 */
 /*Fonts*/
 /*Brand Colors*/
@@ -26,15 +26,13 @@ h1, h2, h3, h4, h5, h6 {
   .btn:active {
     box-shadow: 0 16px 32px -6px rgba(0, 0, 0, 0.2); }
 
-#sidebar {
-  background: #eeeeee;
-  padding: 40px; }
-
-header {
+.header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: -15px; }
+  margin-left: -15px;
+  background: #eeeeee;
+  padding: 40px; }
 
 .menu-icon {
   display: inline-block;
@@ -57,8 +55,13 @@ header {
   .nav-items li a {
     text-decoration: none; }
 
+#sidebar-container {
+  background-color: #eeeeee;
+  padding: 40px; }
+
 .sidebar-content {
-  margin-top: 100px; }
+  margin-top: 80px;
+  width: 70vw; }
   .sidebar-content .sidebar-heading {
     font-family: "Open Sans", sans-serif;
     font-weight: 800;
@@ -84,14 +87,41 @@ header {
   background-color: #33A289;
   height: 364px; }
 
-@media (min-width: 480px) {
-  html {
-    background: green; } }
 @media (min-width: 768px) {
-  html {
-    background: blue; } }
-@media (min-width: 1024px) {
-  html {
-    background: yellow; } }
+  .header {
+    background-color: transparent;
+    padding: 40px;
+    position: absolute;
+    z-index: 100; }
+
+  #content-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: static;
+    overflow: visible;
+    width: 50%;
+    max-width: 1200px;
+    margin-left: 50%; }
+
+  #sidebar-container {
+    position: fixed;
+    height: 100%;
+    width: 50%; }
+
+  .sidebar-content {
+    margin-top: 200px;
+    width: 70%; }
+
+  #work {
+    height: 400px;
+    width: 100%; }
+
+  #sketchbook {
+    height: 364px;
+    width: 50%; }
+
+  #contact {
+    height: 364px;
+    width: 50%; } }
 
 /*# sourceMappingURL=main.css.map */
