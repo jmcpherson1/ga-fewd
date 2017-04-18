@@ -1,0 +1,100 @@
+/*Questions:
+  1. How do you organize and watch a CSS and SCSS folder?
+  2. Button include?
+*/
+
+@import "partials/_variables.scss";
+@import "partials/_resets";
+@import "partials/_buttons.scss";
+
+// @import "partials/_base.scss";
+
+
+#sidebar {
+  background: rgb(238, 238, 238);
+  padding: 40px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: -15px;
+}
+
+.menu-icon {
+  display: inline-block;
+  padding: 15px;
+
+  .icon-bar {
+    background-color: $grayscale-dark;
+    width: 30px;
+    height: 5px;
+    margin: 4px 0;
+  }
+}
+
+.logo {
+  background-image: url(../img/jm_logo.svg);
+  background-size: 55px 55px;
+  margin-left: auto;
+  width: 55px;
+  height: 55px;
+  
+}
+
+.nav-items {
+  display: none;
+
+  li  a{
+    text-decoration: none;
+  }
+}
+
+.sidebar-content {
+  margin-top: 100px;
+
+  .sidebar-heading {
+    font-family: $header-font;
+    font-weight: $extra-bold;
+    font-size: 2.5rem;
+    color: $grayscale-dark;
+  }
+}
+
+.btn {
+  @include btn-primary;
+}
+
+
+//Content Sections
+#work {
+  background-color: #CE5252; 
+  height: 364px;
+}
+
+#sketchbook {
+  background-color: #5A5A5A; 
+  height: 364px;
+}
+
+#contact {
+  background-color: #33A289; 
+  height: 364px;
+}
+
+//Smaller Tablet
+@media (min-width: 480px) {
+  html { background: green; }
+}
+
+//Tablet
+@media (min-width: 768px) {
+  html { background: blue; }
+}
+
+//Desktop
+@media (min-width: 1024px) {
+  html { background: yellow; }
+}
+
