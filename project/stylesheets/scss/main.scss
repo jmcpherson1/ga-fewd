@@ -1,8 +1,3 @@
-/*Questions:
-  1. How do you organize and watch a CSS and SCSS folder?
-  2. 'header' spacing???
-*/
-
 @import "partials/_variables.scss";
 @import "partials/_resets";
 @import "partials/_buttons.scss";
@@ -12,9 +7,10 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: fixed;
   margin-left: -15px;
-  background: $grayscale-light;
   padding: 40px;
+  z-index: 100;
 }
 
 .menu-icon {
@@ -30,9 +26,10 @@
 }
 
 .logo {
-  background-image: url(../img/jm_logo.svg);
+  background-image: url(../../img/jm_logo.svg);
   background-size: 55px 55px;
-  margin-left: auto;
+  position: absolute;
+  margin-left: 70vw;
   width: 55px;
   height: 55px;
 }
@@ -52,7 +49,7 @@
 }
 
 .sidebar-content {
-  margin-top: 80px;
+  margin-top: 170px;
   width: 70vw;
 
   .sidebar-heading {
@@ -91,16 +88,21 @@
 
 //Smaller Tablet
 @media (min-width: 480px) {
-  
+  .logo {
+    margin-left: 80vw;
+  }
 }
 
 //Tablet
 @media (min-width: 768px) {
-  .header { //Need to make fixed, 'margin-left: auto' not working here
-    background-color: rgba(0,0,0,0);
-    padding: 40px;
-    position: absolute;
-    z-index: 100
+  .logo {
+    margin-left: 86vw;
+  }
+
+  #sidebar-container {
+    position: fixed;
+    height: 100%;
+    width: 50%;
   }
 
   #content-container {
@@ -113,36 +115,46 @@
     margin-left: 50%
   }
 
-  #sidebar-container {
-    position: fixed;
-    height: 100%;
-    width: 50%;
-  }
-
   .sidebar-content {
     margin-top: 200px;
     width: 70%;
   }
 
-  //Content Sections
+  //Content Section
   #work {
     height: 400px;
     width: 100%;
   }
 
   #sketchbook {
-    height: 364px;
-    width: 50%;
+    width: 100%;
   }
 
   #contact {
-    height: 364px;
-    width: 50%;
+    width: 100%;
   }
 }
 
 //Desktop
 @media (min-width: 1024px) {
-  
+  .logo {
+    display: none;
+  }
+
+  //Content Section
+  #work {
+    height: 60vh;
+    width: 100%;
+  }
+
+  #sketchbook {
+    height: 40vh;
+    width: 50%;
+  }
+
+  #contact {
+    height: 40vh;
+    width: 50%;
+  }
 }
 
