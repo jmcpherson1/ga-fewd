@@ -1,11 +1,22 @@
+//Questions:
+//Sass sublime autoprefixer?
+//Margins and padding in chrome and safari
+
 @import "partials/_variables.scss";
 @import "partials/_resets";
 @import "partials/_buttons.scss";
 // @import "partials/_base.scss";
 
+.wrapper {
+  position: relative;
+}
+
 .header {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -ms-flex-align: center;
   align-items: center;
   position: fixed;
   margin-left: -15px;
@@ -34,12 +45,9 @@
   height: 55px;
 }
 
-.nav-items {
+nav.nav-items {
   display: none;
-
-  li  a{
-    text-decoration: none;
-  }
+  z-index: 100;
 }
 
 //Sidebar Container
@@ -106,7 +114,9 @@
   }
 
   #content-container {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     position: static;
     overflow: visible;
@@ -137,8 +147,34 @@
 
 //Desktop
 @media (min-width: 1024px) {
-  .logo {
+  .menu-icon {
     display: none;
+  }
+  .logo {
+
+  }
+  
+
+
+  nav.nav-items {
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+
+    li {
+      list-style: none;
+      padding-right: 20px;
+      float: left;
+
+    }  
+
+    a{
+      text-decoration: none;
+      color: black;
+      float: left;
+      
+    }
   }
 
   //Content Section

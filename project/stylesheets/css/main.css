@@ -22,9 +22,15 @@ h1, h2, h3, h4, h5, h6 {
   .btn:active {
     box-shadow: 0 16px 32px -6px rgba(0, 0, 0, 0.2); }
 
+.wrapper {
+  position: relative; }
+
 .header {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -ms-flex-align: center;
   align-items: center;
   position: fixed;
   margin-left: -15px;
@@ -48,10 +54,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 55px;
   height: 55px; }
 
-.nav-items {
-  display: none; }
-  .nav-items li a {
-    text-decoration: none; }
+nav.nav-items {
+  display: none;
+  z-index: 100; }
 
 #sidebar-container {
   background-color: #eeeeee;
@@ -98,7 +103,9 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%; }
 
   #content-container {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     position: static;
     overflow: visible;
@@ -120,8 +127,22 @@ h1, h2, h3, h4, h5, h6 {
   #contact {
     width: 100%; } }
 @media (min-width: 1024px) {
-  .logo {
+  .menu-icon {
     display: none; }
+
+  nav.nav-items {
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    left: 40px; }
+    nav.nav-items li {
+      list-style: none;
+      padding-right: 20px;
+      float: left; }
+    nav.nav-items a {
+      text-decoration: none;
+      color: black;
+      float: left; }
 
   #work {
     height: 60vh;
