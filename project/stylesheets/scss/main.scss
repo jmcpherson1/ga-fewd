@@ -1,3 +1,5 @@
+// Got back and adjust grid alignments
+
 //Questions:
 //Sass sublime autoprefixer?
 //Margins and padding in chrome and safari
@@ -12,21 +14,26 @@
 }
 
 .header {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -ms-flex-align: center;
-  align-items: center;
   position: fixed;
-  margin-left: -15px;
-  padding: 40px;
+  width: 100vw;
   z-index: 100;
+  padding: 40px;
+}
+
+.logo {
+  background-image: url(../../img/jm_logo.svg);
+  background-size: 55px 55px;
+  width: 55px;
+  height: 55px;
+  float: left;
+  cursor: pointer;
 }
 
 .menu-icon {
   display: inline-block;
   padding: 15px;
+  float: right;
+  cursor: pointer;
 
   .icon-bar {
     background-color: $grayscale-dark;
@@ -36,18 +43,28 @@
   }
 }
 
-.logo {
-  background-image: url(../../img/jm_logo.svg);
-  background-size: 55px 55px;
-  position: absolute;
-  margin-left: 70vw;
-  width: 55px;
-  height: 55px;
-}
-
-nav.nav-items {
+nav.dropdown {
+  font-family: $nav-font;
   display: none;
-  z-index: 100;
+  list-style: none;
+  padding-top: 120px;
+  text-align: center;
+  cursor: pointer;
+  height: 100vh;
+  position: fixed;
+  background-color: gray;
+  width: 100vw;
+
+  li {
+    list-style: none;
+    padding: 40px;
+    text-align: center;
+  }  
+
+  a{
+    text-decoration: none;
+    text-align: center;    
+  }
 }
 
 //Sidebar Container
@@ -57,11 +74,11 @@ nav.nav-items {
 }
 
 .sidebar-content {
-  margin-top: 170px;
+  margin-top: 235px;
   width: 70vw;
 
   .sidebar-heading {
-    font-family: $header-font;
+    // font-family: $header-font;
     font-weight: $extra-bold;
     font-size: 2.5rem;
     color: $grayscale-dark;
@@ -96,15 +113,15 @@ nav.nav-items {
 
 //Smaller Tablet
 @media (min-width: 480px) {
-  .logo {
-    margin-left: 80vw;
-  }
+  
 }
 
 //Tablet
 @media (min-width: 768px) {
-  .logo {
-    margin-left: 86vw;
+
+  nav.dropdown {
+    width: 100vw;
+    z-index: 99;
   }
 
   #sidebar-container {
@@ -150,21 +167,20 @@ nav.nav-items {
   .menu-icon {
     display: none;
   }
-  .logo {
 
-  }
-  
-
-
-  nav.nav-items {
+  nav.dropdown {
     display: block;
     position: absolute;
-    bottom: 40px;
-    left: 40px;
+    bottom: 20px;
+    padding: 0px;
+    text-align: inherit;
+    height: inherit;
+    width: inherit;
+    background-color: transparent;
 
     li {
       list-style: none;
-      padding-right: 20px;
+      padding-right: 0px;
       float: left;
 
     }  
