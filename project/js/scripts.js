@@ -22,3 +22,10 @@ $(".menu-icon").on("focusout", function () {
 //       $("nav.dropdown").hide();
 //    }
 // });
+
+
+//Nav animation
+$(".menu-icon").click(function(){
+	// console.log("menu clicked");
+	$(this).toggleClass('open');
+});
