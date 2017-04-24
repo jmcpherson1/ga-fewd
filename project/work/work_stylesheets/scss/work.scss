@@ -1,7 +1,8 @@
+//Help:
+//Remove '.header' background gradient when menu is open?
 @import "partials/_variables.scss";
 @import "partials/_resets";
 @import "partials/_buttons.scss";
-// @import "partials/_base.scss";
 
 //** Global **//
 .wrapper {
@@ -13,10 +14,15 @@
   width: 100vw;
   z-index: 100;
   padding: 40px;
+  // background: linear-gradient(to bottom, $grayscale-light 70%, rgba(0, 0, 0, 0));
 }
 
-.logo {
-  background-image: url(../../img/jm_logo.svg);
+// .change-bg { //Remove bg gradient when menu is open - see JS
+//   background: rgba(0, 0, 0, 0); 
+// }
+
+.logo a {
+  background-image: url(../../../img/jm_logo.svg);
   background-size: 55px 55px;
   width: 55px;
   height: 55px;
@@ -26,30 +32,18 @@
 
 footer {
   font-family: $body-font;
-  font-size: .7rem;
-  color: gray;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
+  font-size: .8rem;
+  color: $grayscale-light;
+  // position: absolute;
+  // bottom: 10px;
+  // right: 10px;
+  background-color: $grayscale-dark;
+  padding: 20px 40px; 
+  text-align: center;
+  width: 100%;
+
 
 }
-
-
-//** Menu Icon **//
-
-// .menu-icon {
-//   display: inline-block;
-//   padding: 15px;
-//   float: right;
-//   cursor: pointer;
-
-//   .icon-bar {
-//     background-color: $grayscale-dark;
-//     width: 30px;
-//     height: 5px;
-//     margin: 4px 0;
-//   }
-// }
 
 .menu-icon {
   width: 55px;
@@ -195,21 +189,28 @@ nav .dropdown {
 }
 
 
-
-//Content Container
-#work {
-  background-color: $primary; 
-  height: 364px;
+//** Work - Content Container **//
+.work {
+  padding: 40px;
 }
 
-#sketchbook {
-  background-color: $brand-2; 
-  height: 364px;
-}
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000;
+  width: 100%;
 
-#contact {
-  background-color: $brand-1; 
-  height: 364px;
+  .project {
+    background-color: $brand-1;
+    height: 350px;
+    width: 100%;
+  }
+  .project:nth-child(2) {
+    background-color: $brand-2; 
+  }
+  .project:nth-child(3) {
+    background-color: $primary; 
+  }
 }
 
 
@@ -232,7 +233,7 @@ nav .dropdown {
   #sidebar-container {
     position: fixed;
     height: 100%;
-    width: 50%;
+    width: 35%;
   }
 
   #content-container {
@@ -242,28 +243,14 @@ nav .dropdown {
     flex-wrap: wrap;
     position: static;
     overflow: visible;
-    width: 50%;
+    width: 65%;
     max-width: 1200px;
-    margin-left: 50%
+    margin-left: 35%
   }
 
   .sidebar-content {
     margin-top: 200px;
     width: 70%;
-  }
-
-  //Content Section
-  #work {
-    height: 400px;
-    width: 100%;
-  }
-
-  #sketchbook {
-    width: 100%;
-  }
-
-  #contact {
-    width: 100%;
   }
 }
 
@@ -287,7 +274,7 @@ nav .dropdown {
 
     li, a {
       float: left;
-      padding: 0px 20px 0px 0px; //Overriding top, bottom,left padding
+      padding: 0px 10px 0px 0px; //Overriding top, bottom,left padding
       text-decoration: none;
       color: black;
       float: left;
@@ -309,20 +296,12 @@ nav .dropdown {
     }
   }
 
-  //Content Section
-  #work {
-    height: 50vh;
-    width: 100%;
+  .project-links {
+    .project {
+      background-color: $brand-1;
+      height: 50vh;
+      width: 50%;
+    }
   }
 
-  #sketchbook {
-    height: 50vh;
-    width: 50%;
-  }
-
-  #contact {
-    height: 50vh;
-    width: 50%;
-  }
 }
-

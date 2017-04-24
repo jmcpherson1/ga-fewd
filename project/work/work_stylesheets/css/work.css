@@ -33,8 +33,8 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 100;
   padding: 40px; }
 
-.logo {
-  background-image: url(../../img/jm_logo.svg);
+.logo a {
+  background-image: url(../../../img/jm_logo.svg);
   background-size: 55px 55px;
   width: 55px;
   height: 55px;
@@ -43,11 +43,12 @@ h1, h2, h3, h4, h5, h6 {
 
 footer {
   font-family: "Open Sans", sans-serif;
-  font-size: .7rem;
-  color: gray;
-  position: absolute;
-  bottom: 10px;
-  right: 10px; }
+  font-size: .8rem;
+  color: #eeeeee;
+  background-color: #333030;
+  padding: 20px 40px;
+  text-align: center;
+  width: 100%; }
 
 .menu-icon {
   width: 55px;
@@ -157,17 +158,22 @@ nav .dropdown {
   .btn:active {
     background-color: #b93434; }
 
-#work {
-  background-color: #ce5252;
-  height: 364px; }
+.work {
+  padding: 40px; }
 
-#sketchbook {
-  background-color: #5A5A5A;
-  height: 364px; }
-
-#contact {
-  background-color: #33A289;
-  height: 364px; }
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000;
+  width: 100%; }
+  .project-links .project {
+    background-color: #33A289;
+    height: 350px;
+    width: 100%; }
+  .project-links .project:nth-child(2) {
+    background-color: #5A5A5A; }
+  .project-links .project:nth-child(3) {
+    background-color: #ce5252; }
 
 @media (min-width: 768px) {
   nav .dropdown {
@@ -177,7 +183,7 @@ nav .dropdown {
   #sidebar-container {
     position: fixed;
     height: 100%;
-    width: 50%; }
+    width: 35%; }
 
   #content-container {
     display: -ms-flexbox;
@@ -186,23 +192,13 @@ nav .dropdown {
     flex-wrap: wrap;
     position: static;
     overflow: visible;
-    width: 50%;
+    width: 65%;
     max-width: 1200px;
-    margin-left: 50%; }
+    margin-left: 35%; }
 
   .sidebar-content {
     margin-top: 200px;
-    width: 70%; }
-
-  #work {
-    height: 400px;
-    width: 100%; }
-
-  #sketchbook {
-    width: 100%; }
-
-  #contact {
-    width: 100%; } }
+    width: 70%; } }
 @media (min-width: 1024px) {
   .menu-icon {
     display: none; }
@@ -220,7 +216,7 @@ nav .dropdown {
     background: transparent; }
     nav .dropdown li, nav .dropdown a {
       float: left;
-      padding: 0px 20px 0px 0px;
+      padding: 0px 10px 0px 0px;
       text-decoration: none;
       color: black;
       float: left; }
@@ -234,16 +230,9 @@ nav .dropdown {
       nav .dropdown li:active, nav .dropdown a:active {
         color: #333030; }
 
-  #work {
-    height: 50vh;
-    width: 100%; }
-
-  #sketchbook {
-    height: 50vh;
-    width: 50%; }
-
-  #contact {
+  .project-links .project {
+    background-color: #33A289;
     height: 50vh;
     width: 50%; } }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=work.css.map */

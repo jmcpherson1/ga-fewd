@@ -1,7 +1,7 @@
 /*Fonts*/
 $header-font: 'Open Sans', sans-serif;
 $body-font: 'Lora', serif;
-$nav-font: 'Open Sans', sans-serif;
+$body-font: 'Open Sans', sans-serif;
 
 //Font Weights
 $regular: 400;
@@ -9,6 +9,10 @@ $bold: 600;
 $extra-bold: 800;
 
 /*Brand Colors*/
-$primary: rgba(206, 82, 82, 1);
+$primary: rgba(206, 82, 82, 1); 
 $grayscale-light: rgba(238, 238, 238, 1); //light light gray
 $grayscale-dark: rgba(51, 48, 48, 1); //dark gray
+
+/*Other Colors*/
+$brand-1: #33A289; //Teal color
+$brand-2: #5A5A5A; //Gray color
