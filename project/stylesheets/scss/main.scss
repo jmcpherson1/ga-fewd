@@ -16,12 +16,18 @@
 }
 
 .logo {
-  background-image: url(../../img/jm_logo.svg);
-  background-size: 55px 55px;
+  display: inline-block;
   width: 55px;
   height: 55px;
-  float: left;
-  cursor: pointer;
+  
+  a {
+    background-image: url(../../img/jm_logo.svg);
+    background-size: 55px 55px;
+    width: 55px;
+    height: 55px;
+    float: left;
+    cursor: pointer;
+  }
 }
 
 footer {
@@ -33,23 +39,6 @@ footer {
   right: 10px;
 
 }
-
-
-//** Menu Icon **//
-
-// .menu-icon {
-//   display: inline-block;
-//   padding: 15px;
-//   float: right;
-//   cursor: pointer;
-
-//   .icon-bar {
-//     background-color: $grayscale-dark;
-//     width: 30px;
-//     height: 5px;
-//     margin: 4px 0;
-//   }
-// }
 
 .menu-icon {
   width: 55px;
