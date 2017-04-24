@@ -120,35 +120,26 @@ footer {
   transform: rotate(45deg); }
 
 nav .dropdown {
+  display: none;
   background-color: #333030;
   font-family: "Open Sans", sans-serif;
-  display: none;
   list-style: none;
   position: fixed;
   height: 100vh;
   width: 100vw;
-  padding-top: 120px;
+  padding: 70px 0 0 0;
   cursor: pointer; }
   nav .dropdown li, nav .dropdown a {
     display: block;
     text-decoration: none;
     padding: 25px 0;
     text-align: center; }
-    nav .dropdown li:visited, nav .dropdown a:visited {
-      color: #eeeeee; }
-    nav .dropdown li:hover, nav .dropdown a:hover {
-      font-weight: 600;
-      color: white;
-      background: #262424; }
-    nav .dropdown li:active, nav .dropdown a:active {
-      color: #eeeeee; }
 
 #sidebar-container {
-  background-color: #eeeeee;
-  padding: 40px; }
+  background-color: #eeeeee; }
 
 .sidebar-content {
-  margin-top: 235px;
+  padding: 300px 0 40px 40px;
   width: 70vw; }
   .sidebar-content .sidebar-heading {
     font-weight: 800;
@@ -201,26 +192,51 @@ nav .dropdown {
     margin-left: 35%; }
 
   .sidebar-content {
-    margin-top: 200px;
     width: 70%; } }
 @media (min-width: 1024px) {
+  .side-container {
+    display: flex;
+    flex-wrap: wrap; }
+
+  .header {
+    position: fixed;
+    width: 140px;
+    z-index: 100;
+    padding: 40px;
+    order: 1; }
+
   .menu-icon {
     display: none; }
 
   nav .dropdown {
     display: block;
-    background: transparent; }
+    order: 3;
+    font-size: .8rem;
+    padding: 40px;
+    left: 40px;
+    bottom: 0px;
+    background: transparent;
+    color: #333030;
+    /* background-color: #333030; */
+    font-family: "Open Sans", sans-serif;
+    /* display: none; */
+    list-style: none;
+    padding: 0;
+    height: inherit;
+    width: inherit;
+    /* padding-top: 120px; */
+    cursor: pointer; }
     nav .dropdown li, nav .dropdown a {
-      float: left; }
-      nav .dropdown li:visited, nav .dropdown a:visited {
-        font-weight: 600;
-        color: #333030; }
-      nav .dropdown li:hover, nav .dropdown a:hover {
-        font-weight: 600;
-        color: #333030;
-        background: transparent; }
-      nav .dropdown li:active, nav .dropdown a:active {
-        color: #333030; }
+      display: block;
+      text-decoration: none;
+      float: left;
+      padding-right: 10px;
+      color: #333030; }
+
+  .sidebar-content {
+    order: 2;
+    margin: 0;
+    padding: 300px 0 40px 40px; }
 
   .project-links .project {
     background-color: #33A289;

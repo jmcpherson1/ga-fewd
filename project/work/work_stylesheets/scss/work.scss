@@ -135,49 +135,49 @@ footer {
 
 //** Nav **//
 
-nav .dropdown {
-  background-color: $grayscale-dark;
-  font-family: $body-font;
-  display: none;
-  list-style: none;
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  padding-top: 120px;
-  cursor: pointer;
-  
-  li, a {
-    display: block;
-    text-decoration: none;
-    padding: 25px 0;
-    text-align: center;
+
+  nav .dropdown {
+    display: none;
+    background-color: $grayscale-dark;
+    font-family: $body-font;
+    list-style: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    padding: 70px 0 0 0;
+    cursor: pointer;
     
+    li, a {
+      display: block;
+      text-decoration: none;
+      padding: 25px 0;
+      text-align: center;
+      
 
-    &:visited {
-      color: $grayscale-light;
-    }
+      // &:visited {
+      //   color: $grayscale-light;
+      // }
 
-    &:hover {
-      font-weight: $bold;
-      color: white;
-      background: darken($grayscale-dark, 5%);   
-    }
+      // &:hover {
+      //   font-weight: $bold;
+      //   color: white;
+      //   background: darken($grayscale-dark, 5%);   
+      // }
 
-    &:active {
-      color: $grayscale-light;
-    } 
-  }  
-}
-
+      // &:active {
+      //   color: $grayscale-light;
+      // } 
+    }  
+  }
 
 //Sidebar Container
 #sidebar-container {
   background-color: $grayscale-light;
-  padding: 40px;
+  // padding: 40px;
 }
 
 .sidebar-content {
-  margin-top: 235px;
+  padding: 300px 0 40px 40px;
   width: 70vw;
 
   .sidebar-heading {
@@ -253,50 +253,79 @@ nav .dropdown {
   }
 
   .sidebar-content {
-    margin-top: 200px;
     width: 70%;
   }
 }
 
 //Desktop
 @media (min-width: 1024px) {
+  .side-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header {
+    position: fixed;
+    width: 140px;
+    z-index: 100;
+    padding: 40px;
+    order: 1;
+  }
+
   .menu-icon {
     display: none;
   }
 
-  nav .dropdown {
-    display: block;
-    background: transparent;
-    // position: absolute;
-    // bottom: 40px;
-    // padding-left: 40px;
-    // margin: 0px;
-    // text-align: inherit;
-    // height: inherit;
-    // width: inherit;
-    
+
+    nav .dropdown {
+      display: block;
+      order: 3;
+      font-size: .8rem;
+      padding: 40px;
+      left: 40px;
+      bottom: 0px;
+      background: transparent;
+      color: $grayscale-dark;
+
+      /* background-color: #333030; */
+      font-family: "Open Sans", sans-serif;
+      /* display: none; */
+      list-style: none;
+      // position: relative;
+      padding: 0;
+      height: inherit;
+      width: inherit;
+      /* padding-top: 120px; */
+      cursor: pointer;
 
     li, a {
+      display: block;
+      text-decoration: none;
       float: left;
-      // padding: 0px 10px 0px 0px; //Overriding top, bottom,left padding
-      // text-decoration: none;
-      // float: left;
+      padding-right: 10px;
+      color: $grayscale-dark;
 
-      &:visited {
-        font-weight: $bold;
-        color: $grayscale-dark;
-      }
+      // &:visited {
+      //   font-weight: $bold;
+      //   color: $grayscale-dark;
+      // }
 
-      &:hover {
-        font-weight: $bold;
-        color: $grayscale-dark;
-        background: transparent;  
-      }
+      // &:hover {
+      //   font-weight: $bold;
+      //   color: $grayscale-dark;
+      //   background: transparent;  
+      // }
 
-      &:active {
-        color: $grayscale-dark;
-      } 
+      // &:active {
+      //   color: $grayscale-dark;
+      // } 
     }
+  }
+
+  .sidebar-content {
+    order: 2;
+    margin: 0;
+    padding: 300px 0 40px 40px;
   }
 
   .project-links {
@@ -306,5 +335,4 @@ nav .dropdown {
       width: 50%;
     }
   }
-
 }

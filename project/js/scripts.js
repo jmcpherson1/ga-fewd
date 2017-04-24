@@ -13,13 +13,23 @@ $('.menu-icon').on('focusout', function () {
    $('nav .dropdown').hide();
 });
 
-// Remove display:none on nav when window is resized
+//Remove display:none on nav when window is resized
 // $(window).resize(function() {
 //    var pageWidth = $(window).width();
 //    if (pageWidth > 1024) {
-//       $("nav.dropdown").show();
+//       $("nav .dropdown").show();
 //    } else if (pageWidth < 1023) {
-//       $("nav.dropdown").hide();
+//       $("nav .dropdown").hide();
+//    }
+// });
+
+// Remove display:none on nav when window is resized
+// $(window).click(function() {
+//    var pageWidth = $(window).width();
+//    if (pageWidth > 1024) {
+//       $('nav .dropdown').css('display','block');
+//    } else {
+//       console.log('idk what to put here');
 //    }
 // });
 
