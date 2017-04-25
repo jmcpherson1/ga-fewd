@@ -32,12 +32,12 @@
 
 footer {
   font-family: $body-font;
-  font-size: .7rem;
-  color: gray;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-
+  font-size: .8rem;
+  color: $grayscale-light;
+  background-color: $grayscale-dark;
+  padding: 20px 40px; 
+  text-align: center;
+  width: 100%;
 }
 
 .menu-icon {
@@ -236,7 +236,6 @@ nav {
     position: static;
     overflow: visible;
     width: 50%;
-    max-width: 1200px;
     margin-left: 50%
   }
 
@@ -298,7 +297,7 @@ nav {
     }
   }
 
-  //Content Section
+  //Content Container
   #work {
     height: 50vh;
     width: 100%;
