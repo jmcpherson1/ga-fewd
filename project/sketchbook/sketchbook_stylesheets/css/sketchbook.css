@@ -3,7 +3,8 @@
 /*Other Colors*/
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 100%; }
+  font-size: 100%;
+  background-color: #FCFCFC; }
 
 p {
   padding: 20px 0; }
@@ -151,22 +152,11 @@ nav li:hover {
     font-size: 2.5rem;
     color: #333030; }
 
-.work {
+.container {
   padding: 40px; }
 
-.project-links {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #000;
+.images img {
   width: 100%; }
-  .project-links .project {
-    background-color: #33A289;
-    height: 350px;
-    width: 100%; }
-  .project-links .project:nth-child(2) {
-    background-color: #5A5A5A; }
-  .project-links .project:nth-child(3) {
-    background-color: #ce5252; }
 
 @media (min-width: 768px) {
   nav .dropdown {
@@ -208,22 +198,14 @@ nav li:hover {
     width: 65%;
     margin-left: 35%; }
 
-  .next-project {
-    margin: 0 auto;
-    padding: 20px; }
-
-  .prev,
-  .next {
-    cursor: pointer;
-    padding: 16px;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0; }
-
-  .next {
-    right: 0; } }
+  .images {
+    padding: 40px;
+    margin: 0 auto; }
+    .images img {
+      display: block;
+      margin: 0;
+      padding-bottom: 40px;
+      width: 100%; } }
 @media (min-width: 1024px) {
   .header {
     position: fixed;
@@ -258,9 +240,13 @@ nav li:hover {
       color: #333030;
       background: transparent; }
 
-  .project-links .project {
-    background-color: #33A289;
-    height: 50vh;
-    width: 50%; } }
+  .images {
+    padding: 0;
+    margin: 0 auto; }
+    .images img {
+      display: block;
+      margin: 40px;
+      padding-bottom: 40px;
+      width: 600px; } }
 
 /*# sourceMappingURL=sketchbook.css.map */

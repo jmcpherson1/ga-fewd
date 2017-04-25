@@ -188,31 +188,31 @@ footer {
   }
 }
 
-
 //** Work - Content Container **//
-.work {
+// #content-container {
+//   h1 {
+//     font-size: 1.4rem;
+//   }
+  
+//   h4 {
+//     font-size: .8rem;
+//   }
+
+//   p {
+//     font-size: .8rem;
+//   }
+// }
+
+.container {
   padding: 40px;
 }
 
-//* More Projects *//
-.project-links {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #000;
-  width: 100%;
-
-  .project {
-    background-color: $brand-1;
-    height: 350px;
+.images {
+  img {
     width: 100%;
   }
-  .project:nth-child(2) {
-    background-color: $brand-2; 
-  }
-  .project:nth-child(3) {
-    background-color: $primary; 
-  }
-}
+} 
+
 
 
 
@@ -279,25 +279,16 @@ footer {
     margin-left: 35%
   }
 
-  // Next & previous buttons
-  .next-project {
+  .images {
+    padding: 40px;
     margin: 0 auto;
-    padding: 20px;
-  }
 
-  .prev, 
-  .next {
-    cursor: pointer;
-    padding: 16px;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-  }
-
-  .next { //Position the "next button" to the right
-    right: 0;
+    img {
+      display: block;
+      margin: 0;
+      padding-bottom: 40px;
+      width: 100%;
+    }
   }
 }
 
@@ -348,11 +339,15 @@ footer {
     }
   }
 
-  .project-links {
-    .project {
-      background-color: $brand-1;
-      height: 50vh;
-      width: 50%;
+  .images {
+    padding: 0;
+    margin: 0 auto;
+
+    img {
+      display: block;
+      margin: 40px;
+      padding-bottom: 40px;
+      width: 600px;
     }
   }
 }

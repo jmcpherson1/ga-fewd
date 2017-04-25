@@ -3,7 +3,8 @@
 /*Other Colors*/
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 100%; }
+  font-size: 100%;
+  background-color: #FCFCFC; }
 
 p {
   padding: 20px 0; }
