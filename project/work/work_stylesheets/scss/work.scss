@@ -133,42 +133,47 @@ footer {
 }
 
 
-//** Nav **//
+//* Nav *//
 
+  nav {
+    .dropdown {
+      display: none;
+      background-color: $grayscale-dark;
+      font-family: $body-font;
+      list-style: none;
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      padding: 95px 0 0 0;
+      cursor: pointer;
+    }
 
-  nav .dropdown {
-    display: none;
-    background-color: $grayscale-dark;
-    font-family: $body-font;
-    list-style: none;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    padding: 70px 0 0 0;
-    cursor: pointer;
-    
-    li, a {
-      display: block;
-      text-decoration: none;
-      padding: 25px 0;
-      text-align: center;
-      
+    li {
+      a {
+        display: block;
+        text-align: center;
+        color: $grayscale-light;
+        text-decoration: none;
+        padding: 40px 0;
+      }
 
       // &:visited {
       //   color: $grayscale-light;
       // }
 
-      // &:hover {
-      //   font-weight: $bold;
-      //   color: white;
-      //   background: darken($grayscale-dark, 5%);   
-      // }
+      &:hover {
+        font-weight: $bold;
+        color: white;
+        background: darken($grayscale-dark, 5%);   
+      }
 
       // &:active {
       //   color: $grayscale-light;
-      // } 
-    }  
+      // }   
+    }
   }
+
+  //* End Nav *//  
 
 //Sidebar Container
 #sidebar-container {
@@ -276,49 +281,35 @@ footer {
     display: none;
   }
 
-
-    nav .dropdown {
-      display: block;
-      order: 3;
-      font-size: .8rem;
-      padding: 40px;
-      left: 4   0px;
-      bottom: 0px;
-      background: transparent;
-      color: $grayscale-dark;
-
-      /* background-color: #333030; */
-      font-family: "Open Sans", sans-serif;
-      /* display: none; */
+  nav {
+    .dropdown {
+      display: block;//override menu-icon "display:none"
+      background-color: transparent;
+      font-family: $body-font;
       list-style: none;
-      // position: relative;
-      padding: 0;
       height: inherit;
       width: inherit;
-      /* padding-top: 120px; */
+      padding: 50px 0px 40px 40px;
       cursor: pointer;
+      bottom: 0px;
+    }
 
-    li, a {
-      display: block;
-      text-decoration: none;
+    li {
       float: left;
-      padding-right: 10px;
-      color: $grayscale-dark;
 
-      // &:visited {
-      //   font-weight: $bold;
-      //   color: $grayscale-dark;
-      // }
+      a {
+        display: block;
+        text-align: center;
+        color: $grayscale-dark;
+        text-decoration: none;
+        padding: 0px 10px 0px 0px;
+      }
 
-      // &:hover {
-      //   font-weight: $bold;
-      //   color: $grayscale-dark;
-      //   background: transparent;  
-      // }
-
-      // &:active {
-      //   color: $grayscale-dark;
-      // } 
+      &:hover {
+        font-weight: $bold;
+        color: $grayscale-dark;
+        background: transparent;   
+      }   
     }
   }
 
