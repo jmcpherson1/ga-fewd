@@ -161,6 +161,8 @@ nav li:hover {
     background-color: #b93434; }
 
 #work {
+  background: url("../../img/thumbnail.png") no-repeat center center;
+  background-size: cover;
   background-color: #ce5252;
   height: 364px; }
 
@@ -233,7 +235,6 @@ nav li:hover {
       background: transparent; }
 
   #work {
-    height: 50vh;
     width: 100%; }
 
   #sketchbook {

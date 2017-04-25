@@ -191,6 +191,8 @@ nav {
 
 //Content Container
 #work {
+  background: url("../../img/thumbnail.png") no-repeat center center;
+  background-size: cover;
   background-color: $primary; 
   height: 364px;
 }
@@ -299,7 +301,7 @@ nav {
 
   //Content Container
   #work {
-    height: 50vh;
+    // height: 50vh;
     width: 100%;
   }
 
